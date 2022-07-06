@@ -192,7 +192,9 @@ char ch = \u00061;---->invalid
  */
 
 
-
+/**
+ char ch = '\uXXXX'; where XXXX is 4 digit hexadecimal code
+ */
 public class _03_Literals {
 	public static void main(String[] args) {
 		
