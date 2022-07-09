@@ -1,7 +1,5 @@
 package _13_java_lang_package;
 
-import java.lang.reflect.*;
-
 /*
 
 5. getClass()
