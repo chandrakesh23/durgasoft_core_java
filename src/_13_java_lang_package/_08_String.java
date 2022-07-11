@@ -127,9 +127,62 @@ System.out.println(s2);//SpringWinter
  		+--------------+	|	+------+	 	
  s1-->	|SpringFall	   |	|   | Fall |    
  		+--------------+	|   +------+
+=======================
+
+ Constructors of String Class:
  
- 107, start
+ 1. String s = new String();
+ --> creates an empty String object.
+ 
+ 2. String s = new String(String_Literal);
+ --> creates a string object on heap for given string literal
+ 
+ 3. String s = new String(StringBuffer sb);
+ --> creates an equivalent string object for given stringBuffer
+ 
+ 4. String s = new String(char[] ch);
+ --> creates an equivalent string object for the given char array.
+ 		eg: char[] ch = {'a','b','c','d','e'};
+ 			String s = new String(ch);
+ 			System.out.println(s);//abcde
+ 
+ 5. String s = new String(byte[] b);
+ --> creates an equivalent string object for the given byte array.
+ 		eg: byte[] b = {100,101,102,103};
+ 			String s = new String(b);
+ 			System.out.println(s);//defg
+=======================
+ 		
+Important methods of String class:
+
+1. public char charAt(int index);
+	--> returns the character located at specified index. 
+	String s = "durga";
+	System.out.println(s.charAt(3));//g
+	System.out.println(s.charAt(30));//RE: StringIndexOutOfBoundsException
+
+	
+2. public String concat(String s)
+--> the overloaded + and += operators also meant for concatenation purpose only.
+
+String s = "durga";
+s = s.concat("Software");
+//s=s+"Software";
+//s+="Software"; 
+System.out.println(s);//durgaSoftware
+
+
+3. public boolean equals(Object o)
+--> To perform content comparison where case is important.
+--> This is overriding version of Object class equals() method
+
+107 25:12
+ 
  */
 public class _08_String {
-
+	public static void main(String[] args) {
+		String s = "durga";
+		System.out.println(s.charAt(3));//g
+		System.out.println(s.charAt(30));//
+	}
 }
